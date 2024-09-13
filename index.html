@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADI F1</title>
+    <link rel="icon" type="image/x-icon" href="https://cadif1.com/img/iconos/logo.ico">
+    <link rel="stylesheet" href="output.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+</head>
+<body class="relative">
+    <header class="flex justify-between items-center p-5 w-[70%] mx-auto">
+        <div class="box-border">
+            <a class="" href="#">
+                <img class="w-[160px]" src="https://cadif1.com/img/template/logo-cadif1.svg" alt="">
+            </a>
+        </div>
+        <div class="text-[#00548F] font-bold">
+            <ul class="flex space-x-3 items-center text-sm max-w-[100%]">
+                <li class="hover:bg-[#F25822] p-2 rounded-md cursor-pointer hover:text-white">LA ACADEMIA</li>
+                <li class="hover:bg-[#F25822] p-2 rounded-md cursor-pointer hover:text-white">CERTIFICACIÓN</li>
+                <li class="hover:bg-[#F25822] p-2 rounded-md cursor-pointer hover:text-white">EMPLEOS</li>
+                <li class="hover:bg-[#F25822] p-2 rounded-md cursor-pointer hover:text-white">CONTACTO</li>
+                <li class="hover:bg-[#F25822] p-2 rounded-md cursor-pointer hover:text-white">INICIAR SESION</li>
+            </ul>
+        </div> 
+    </header>
+<aside>
+    <div class="bg-[#00548F] text-white max-h-80 text-sm">
+        <div class="flex w-[80%] mx-auto justify-center">
+            <article id="btn-ct" class="hover:bg-[#F25822] w-[20%] h-[260px] p-[2%] box-border">
+                <div class="cursor-pointer">
+                    <img height="60" width="60" src="https://cadif1.com/img/servicios/iconos/carrera-informaticas.png" alt="Carreras Técnias">
+                    <h2 class="text-3xl font-light">Carreras <span class="">Técnicas</span></h2>
+                    <p class="mt-2 overflow-hidden">Formate integral y profesionalmente en un área de estudio y preparate para trabajar.</p>
+                </div>
+            </article>
+            <article id="btn-ae" class="hover:bg-[#F25822] w-[20%] h-[260px] p-[2%] box-border">
+                <div class="cursor-pointer">
+                    <img height="60" width="60" src="https://cadif1.com/img/servicios/iconos/cursos-presenciales.png" alt="Cursos Presenciales">
+                    <h2 class="overflow-hidden text-3xl font-light">Areas de estudio</h2>
+                    <p class="mt-2">Hazte un experto en los temas relacionados con la computación y la informática.</p>
+                </div>
+            </article>
+            <article class="hover:bg-[#F25822] w-[20%] h-[260px] p-[2%]  box-border">
+                <div class="cursor-pointer">
+                    <img height="60" width="60" src="https://cadif1.com/img/servicios/iconos/asesoria-tecnicas.png" alt="Asesorías Técnicas">
+                    <h2 class="text-3xl font-light">Asesorías <span class="">Técnicas</span></h2>
+                    <p class="mt-2">Resuelve los problemas que tengas en el desarrollo de tu proyectos.</p>
+                </div>
+            </article>
+            <article class="hover:bg-[#F25822] w-[20%] h-[260px] p-[2%]  box-border">
+                <div class="cursor-pointer">
+                    <img height="60" width="60" src="https://cadif1.com/img/servicios/iconos/alquiler-salones.png" alt="Alquiler de Salones">
+                    <h2 class="text-3xl font-light"><span class="">Alquiler de </span>Salones</h2>
+                    <p class="mt-2">Contamos con una infraestructura adaptada a tus necesidades con la mejor tecnología.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</aside>
+<aside id="areasContainer" class="mb-7">
+<div class="mx-auto w-[75%] mt-3">
+    <h2 class="text-center text-gray-400 text-2xl">Areas de estudio</h2>
+<div id="areaContainer" class="my-4 grid justify-center grid-cols-[repeat(3,250px)] gap-4">
+</div>
+</div>
+</aside>
+<aside id="Cursos"  class="mb-7 hidden">
+    <div class="mx-auto w-[80%] mt-3">
+        <h2 class="text-center text-gray-400 text-2xl">Cursos del area</h2>
+    <div id="cursosContainer" class="my-4 grid grid-rows-[repeat(2,_minmax(0,_180px))]  grid-cols-[repeat(3,250px)] justify-center gap-4">
+    </div>
+    </div>
+</aside>
+<aside id="Carreras" class="mb-7 hidden">
+    <div class="mx-auto w-[80%] mt-3">
+        <h2 class="text-center text-gray-400 text-2xl">Carreras Tecnicas</h2>
+        <div class="mx-auto w-[60%]">
+            <p class="text-[#00548F] font-bold text-xl ]">¿Qué es una Carrera Técnica en CADI F1?</p>
+            <p class="text-center">Una Carrera Técnica es una agrupación de cursos relacionados a un área de conocimiento específica, con los cuales podrás prepararte para insertarte en el campo laboral, al aprender a usar las herramientas necesarias para cumplir con las funciones que requieren la mayoría de las empresas. Son 8 materias con un total de 160 horas prácticas con un enfoque 100% tecnológico, en donde constantemente estarás aplicando los conocimientos adquiridos, siempre proyectándote hacia la realidad del entorno laboral.</p>
+        </div>
+        <h2 class="text-[#00548F] font-bold text-xl text-center">Carreras disponibles</h2>
+        <div id="carrerasContainer" class="my-4 grid grid-rows-[repeat(5,_minmax(0,_210px))] grid-cols-[repeat(3,250px)] justify-center gap-4">
+    </div>
+    </div>
+</aside>
+<aside id="infoCurso" class="my-7 min-h-[50vh]  hidden">
+    
+</aside>
+<aside id="infoCarrera" class="my-7 min-h-[50vh]  hidden">
+</aside>
+
+<footer>
+	<div class="mx-2 flex justify-around text-xs" bis_skin_checked="1">
+		<div class="" bis_skin_checked="1">
+			<p class="font-bold"><span>Llámanos:</span> </p>
+			<p class=""><a href="tel:+582514416100">+58 (0251) 441.61.00</a></p>
+		</div>
+		<div class="" bis_skin_checked="1">
+			<p class="font-bold"><span>Visítanos:</span> </p>
+			<address>av. Pedro León Torres con calle 59, C.C. Sotavento, Piso 2, Local 27, Barquisimeto Estado Lara, Venezuela.
+			<a href="https://www.google.com/maps?ll=10.06584,-69.35338&amp;z=16&amp;t=m&amp;hl=es&amp;gl=VE&amp;mapclient=embed&amp;cid=16948709330347347957" target="_blank">Google Maps</a> 
+			</address>
+		</div>
+		<div class="" bis_skin_checked="1">
+			<p class="font-bold"><span>Escríbenos:</span></p>
+			<p class=" mb-0"><a href="https://wa.me/584145183935" target="_blank">WhatsApp</a></p>					
+			<p class=" mb-0"><a href="https://t.me/cadif1" target="_blank">Telegram</a></p>
+			<p class=" mb-0"><a href="mailto:contacto@cadif1.com">contacto@cadif1.com</a></p>
+		</div>
+		<div class="col-md-2 d-none col-sm-2 d-sm-block " bis_skin_checked="1">
+			<p class="font-bold"><span>Síguenos:</span></p>
+			<p class=" mb-0"><a href="https://www.instagram.com/cadif1" target="_blank">instagram.com/cadif1</a></p>
+			<p class=" mb-0"><a href="https://www.twitter.com/cadif1" target="_blank">twitter.com/cadif1</a></p>
+			<p class=" mb-0"><a href="https://www.facebook.com/cadif1" target="_blank">facebook.com/cadif1</a></p>
+		</div>
+		<div class="" bis_skin_checked="1">
+			<figure>
+				<a href="https://cadif1.com"><img class="h-[80px]" height="80" src="https://cadif1.com/img/template/cadif1-15-aniversario.svg" alt="CADIF1, 15 Años Innovando la Enseñanza"></a>
+			</figure>
+		</div>
+	</div>
+	<div class="" bis_skin_checked="1">
+		<div class="c" bis_skin_checked="1">
+			<p class="text-center mb-0 mt-3 text-sm"><strong>CADIF1</strong> 
+			Derechos de Autor ©2003-2024. Registrado en el Ministerio del Poder Popular para la Educación de Venezuela R.M.P.E.L Nro 364-6303.<br>
+Todos los derechos reservados. Todas las marcas y logos son propiedad de sus respectivos dueños.
+				<span class="">
+					<a class="" href="#">Términos de servicios</a> | 
+					<a class="" href="#">Políticas de privacidad</a> | 
+					<a class="" href="#">Contacto</a>
+				</span>
+			</p>
+		</div>
+	</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
